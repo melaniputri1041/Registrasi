@@ -1,0 +1,68 @@
+﻿@{
+    Layout = "TambahReg";
+}
+@model Registrasi.Models.Education
+<body>
+    <div class="container">
+        <div class="text">
+            Education
+        </div>
+        <form method="post" action="Create">
+            <div class="form-row">
+                <div class="input-data">
+                    <input type="text" name="Strata">
+                    <div class="underline"></div>
+                    <label>Strata</label>
+                </div>
+                <div class="input-data">
+                    <input type="text" name="Institution">
+                    <div class="underline"></div>
+                    <label>Institution</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="input-data">
+                    <input type="text" name="Major">
+                    <div class="underline"></div>
+                    <label>Major</label>
+                </div>
+                <div class="input-data">
+                    <input type="text" name="GPA">
+                    <div class="underline"></div>
+                    <label>GPA</label>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="input-data">
+                    <input type="date" name="StartDate">
+                    <div class="underline"></div>
+                    <label>StartDate</label>
+                </div>
+                <div class="input-data">
+                    <input type="date" name="EndDate">
+                    <div class="underline"></div>
+                    <label>EndDate</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="input-data">
+                    <input type="date" name="CreateDate">
+                    <div class="underline"></div>
+                    <label>CreateDate</label>
+                </div>
+                <div class="input-data">
+                    <input type="text" name="CreateBy">
+                    <div class="underline"></div>
+                    <label>CreateBy</label>
+                </div>
+            </div>
+            <div class="form-row submit-btn">
+                <div class="input-data">
+                    <div class="inner"></div>
+                    <input type="submit" value="Submit">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>

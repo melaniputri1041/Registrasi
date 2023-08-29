@@ -1,0 +1,66 @@
+﻿@model List<Agen>
+@{
+	Layout = "AdminLayout";
+}
+
+<!---->
+<div class="row">
+	<div class="col-lg-12">
+		<div class="card">
+			<div class="card-header">
+				<h3>List Registrasi</h3>
+			</div>
+
+			<div class="card-body">
+				<table class="table table-bordered">
+					<thead>
+						<tr class="bg-secondary">
+							<th>AgenId</th>
+							<th>RegDate</th>
+							<th>RegStatus</th>
+							<th>Name</th>
+							<th>Gender</th>
+							<th>BirthPlace</th>
+							<th>BirthDate</th>
+							<th>Address</th>
+							<th>Email</th>
+							<th>Phone</th>
+							<th>IdCard</th>
+							<th>CreateDate</th>
+							<th>CreateBy</th>
+							<th>Detail</th>
+						</tr>
+					</thead>
+					<tbody>
+						@foreach (var Agens in Model)
+						{
+							<tr>
+								<td>@Agens.AgenId</td>
+								<td>@Agens.RegDate</td>
+								<td>@Agens.RegStatus</td>
+								<td>@Agens.Name</td>
+								<td>@Agens.Gender</td>
+								<td>@Agens.BirthPlace</td>
+								<td>@Agens.BirthDate</td>
+								<td>@Agens.Addrres</td>
+								<td>@Agens.Email</td>
+								<td>@Agens.Phone</td>
+								<td>@Agens.IdCard</td>
+								<td>@Agens.CreateDate</td>
+								<td>@Agens.CreateBy</td>
+								<td>
+								<a href="/Registrasi/Detail/@Agens.AgenId"
+								   class="btn btn-warning">
+									Detail
+								</a>
+								</td>
+							</tr>
+						}
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!---->

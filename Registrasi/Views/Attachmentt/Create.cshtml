@@ -1,0 +1,55 @@
+﻿@{
+    Layout = "TambahReg";
+}
+@model Registrasi.Models.Attachmentt
+<body>
+    <div class="container">
+        <div class="text">
+            Attachment
+        </div>
+        <form method="post" action="Create">
+            <div class="form-row">
+                <div class="input-data">
+                    <input type="text" name="AttachmentType">
+                    <div class="underline"></div>
+                    <label>AttachmentType</label>
+                </div>
+                <div class="input-data">
+                    <input type="text" name="FileType">
+                    <div class="underline"></div>
+                    <label>FileType</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="input-data">
+                    <input type="text" name="FileName">
+                    <div class="underline"></div>
+                    <label>FileName</label>
+                </div>
+                <div class="input-data">
+                    <input type="text" name="FilePath">
+                    <div class="underline"></div>
+                    <label>FilePath</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="input-data">
+                    <input type="date" name="CreateDate">
+                    <div class="underline"></div>
+                    <label>CreateDate</label>
+                </div>
+                <div class="input-data">
+                    <input type="text" name="CreateBy">
+                    <div class="underline"></div>
+                    <label>CreateBy</label>
+                </div>
+            </div>
+            <div class="form-row submit-btn">
+                <div class="input-data">
+                    <div class="inner"></div>
+                    <input type="submit" value="Selanjutnya">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>

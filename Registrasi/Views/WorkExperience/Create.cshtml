@@ -1,0 +1,68 @@
+﻿@{
+    Layout = "TambahReg";
+}
+@model Registrasi.Models.WorkExperience
+<body>
+    <div class="container">
+        <div class="text">
+            Work Experience
+        </div>
+        <form method="post" action="Create">
+            <div class="form-row">
+                <div class="input-data"> 
+                    <input type="text" name="Company">
+                    <div class="underline"></div>
+                    <label>Company</label>
+                </div>
+                <div class="input-data">
+                    <input type="text" name="Field">
+                    <div class="underline"></div>
+                    <label>Field</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="input-data">
+                    <input type="text" name="Position">
+                    <div class="underline"></div>
+                    <label>Position</label>
+                </div>
+                <div class="input-data">
+                    <input type="date" name="StartDate">
+                    <div class="underline"></div>
+                    <label>StartDate</label>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="input-data">
+                    <input type="date" name="EndDate">
+                    <div class="underline"></div>
+                    <label>EndDate</label>
+                </div>
+                <div class="input-data">
+                    <input type="text" name="JobDesc">
+                    <div class="underline"></div>
+                    <label>Jobdesc</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="input-data">
+                    <input type="date" name="CreateDate">
+                    <div class="underline"></div>
+                    <label>CreateDate</label>
+                </div>
+                <div class="input-data">
+                    <input type="text" name="CreateBy">
+                    <div class="underline"></div>
+                    <label>CreateBy</label>
+                </div>
+            </div>
+            <div class="form-row submit-btn">
+                <div class="input-data">
+                    <div class="inner"></div>
+                    <input type="submit" value="Selanjutnya">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>

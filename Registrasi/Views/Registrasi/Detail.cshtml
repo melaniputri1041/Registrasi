@@ -1,0 +1,174 @@
+﻿@model Registrasi.Models.Kombinasi;
+@{
+	Layout = "AdminLayout";
+}
+
+<!---->
+<div class="row">
+	<div class="col-lg-12">
+		<div class="card">
+			<div class="card-header">
+				<h3>Detail Registrasi</h3>
+			</div>
+			<center>
+			<h3 >Registrasi</h3>
+			</center>
+			<div class="card-body">
+				<table class="table table-bordered" >
+					<thead>
+						<tr class="bg-secondary">
+							<th>AgenId</th>
+							<th>RegDate</th>
+							<th>RegStatus</th>
+							<th>Name</th>
+							<th>Gender</th>
+							<th>BirthPlace</th>
+							<th>BirthDate</th>
+							<th>Address</th>
+							<th>Email</th>
+							<th>Phone</th>
+							<th>IdCard</th>
+							<th>CreateDate</th>
+							<th>CreateBy</th>
+							<th>Detail</th>
+						</tr>
+					</thead>
+					<tbody>
+						@foreach (var Agens in Model.Agen)
+						{
+							<tr>
+								<td>@Agens.AgenId</td>
+								<td>@Agens.RegDate</td>
+								<td>@Agens.RegStatus</td>
+								<td>@Agens.Name</td>
+								<td>@Agens.Gender</td>
+								<td>@Agens.BirthPlace</td>
+								<td>@Agens.BirthDate</td>
+								<td>@Agens.Addrres</td>
+								<td>@Agens.Email</td>
+								<td>@Agens.Phone</td>
+								<td>@Agens.IdCard</td>
+								<td>@Agens.CreateDate</td>
+								<td>@Agens.CreateBy</td>
+							</tr>
+						}
+					</tbody>
+				</table>
+			</div>
+
+			<Center>
+			<h3>Work Experience</h3>
+			</Center>
+			<div class="card-body">
+				<table class="table table-bordered">
+					<thead>
+						<tr class="bg-secondary">
+							
+							<th>WorkExperienceId</th>
+							<th>Company</th>
+							<th>Field</th>
+							<th>Position</th>
+							<th>StartDate</th>
+							<th>EndDate</th>
+							<th>JobDesc</th>
+							<th>CreateDate</th>
+							<th>CreateBy</th>
+						</tr>
+					</thead>
+					<tbody>
+						@foreach (var Agens in Model.WorkExperience)
+						{
+							<tr>
+								<td>@Agens.WorkExperienceId</td>
+								<td>@Agens.Company</td>
+								<td>@Agens.Field</td>
+								<td>@Agens.Position</td>
+								<td>@Agens.StartDate</td>
+								<td>@Agens.EndDate</td>
+								<td>@Agens.JobDesc</td>
+								<td>@Agens.CreateDate</td>
+								<td>@Agens.CreateBy</td>
+							</tr>
+						}
+					</tbody>
+				</table>
+			</div>
+			<center>
+			<h3>Attachment</h3>
+			</center>
+			<div class="card-body">
+				<table class="table table-bordered">
+					<thead>
+						<tr class="bg-secondary">
+
+							<th>AttachmentId</th>
+							<th>AttachmentType</th>
+							<th>FileType</th>
+							<th>FileName</th>
+							<th>FilePath</th>
+							<th>CreateDate</th>
+							<th>CreateBy</th>
+						</tr>
+					</thead>
+					<tbody>
+						@foreach (var Agens in Model.Attachmentt)
+						{
+							<tr>
+								<td>@Agens.AttachmentId</td>
+								<td>@Agens.AttachmentType</td>
+								<td>@Agens.FileType</td>
+								<td>@Agens.FileName</td>
+								<td>@Agens.FilePath</td>
+								<td>@Agens.CreateDate</td>
+								<td>@Agens.CreateBy</td>
+							</tr>
+						}
+					</tbody>
+				</table>
+			</div>
+
+			<center>
+			<h3>Education</h3>
+			</center>
+			<div class="card-body">
+				<table class="table table-bordered">
+					<thead>
+						<tr class="bg-secondary">
+
+							<th>EducationId</th>
+							<th>Strata</th>
+							<th>Institution</th>
+							<th>Major</th>
+							<th>GPA</th>
+							<th>StartDate</th>
+							<th>EndDate</th>
+							<th>CreateDate</th>
+							<th>CreateBy</th>
+						</tr>
+					</thead>
+					<tbody>
+						@foreach (var Agens in Model.Education)
+						{
+							<tr>
+								<td>@Agens.EducationId</td>
+								<td>@Agens.Starta</td>
+								<td>@Agens.Institution</td>
+								<td>@Agens.Major</td>
+								<td>@Agens.GPA</td>
+								<td>@Agens.StarDate</td>
+								<td>@Agens.EndDate</td>
+								<td>@Agens.CreateDate</td>
+								<td>@Agens.CreateBy</td>
+							</tr>
+						}
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!---->
+
+
